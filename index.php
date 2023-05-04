@@ -1,8 +1,12 @@
 <?php
 
 require_once './models/product.php';
+require_once './models/cibo.php';
+require_once './models/giochi.php';
+require_once './models/cucce.php';
+require_once './db.php';
 
-$pranzetti = new Product("croc", "buonissimi", "12$", "cane", "img")
+
 ?>
 
 <!DOCTYPE html>
@@ -13,17 +17,13 @@ $pranzetti = new Product("croc", "buonissimi", "12$", "cane", "img")
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>PODOTTI ANIMALI</h1>
+    <h1>PRODOTTI ANIMALI</h1>
 
-    <div id="container">
-        <div><?php echo $pranzetti->name ?></div>
-        <div><?php echo $pranzetti->description ?></div>
-        <div><?php echo $pranzetti->price ?></div>
-        <div><?php echo $pranzetti->category ?></div>
-        <div><?php echo $pranzetti->imgProduct ?></div>
+    <div id="container-card">
+        
     </div>
 </body>
 </html>

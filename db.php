@@ -1,5 +1,8 @@
 <?php
-
+require_once __DIR__ . "/models/product.php";
+require_once __DIR__ . "/models/cucce.php";
+require_once __DIR__ . "/models/cibo.php";
+require_once __DIR__ . "/models/giochi.php";
 $type = ["gatto", "cane"];
 
 $pranzetti = new Cibo("croc", "buonissimi", "12$", $type[0], "img", "10 Luglio 2023");

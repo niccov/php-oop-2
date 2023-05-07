@@ -8,4 +8,8 @@
 
         $this->dimensione = $dimensione;
      }
+
+     public function getDimensioni() {
+      return $this->dimensione;
+   }
    }
